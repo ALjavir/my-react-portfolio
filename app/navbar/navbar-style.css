@@ -1,0 +1,218 @@
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+}
+
+.navbar {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;         
+    margin: 0;               
+    position: relative; /* Context helper anchor for the absolute mobile menu drawer */
+}
+
+/* Logo Alignment */
+.logo {
+    font-family: var(--font-logo, sans-serif);
+    font-size: 34px;
+    font-weight: bold;
+   background: linear-gradient(to right, #ff4e00, #ec008c);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-decoration: none;
+}
+
+/* --- Desktop Layout --- */
+.nav-desktop-menu {
+    display: flex;
+    gap: 42px;
+}
+
+.nav-item-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-decoration: none;
+    font-family: var(--font-navbar, sans-serif);
+}
+
+.nav-item-desktop .nav-num {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.2s ease;
+}
+
+.nav-item-desktop .nav-text {
+    font-size: 24px;
+    color: #ffffff;
+    transition: color 0.2s ease;
+}
+
+.nav-item-desktop:hover .nav-num,
+.nav-item-desktop:hover .nav-text {
+    font-weight: 600;
+      background: linear-gradient(to right, #ff4e00, #ec008c);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-decoration: none;
+}
+
+/* --- Icon Actions and Toggle Styling --- */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.icon-btn {
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 45px;
+    background-color: transparent;
+}
+
+/* Assign default navigation open graphic state */
+.mobile-toggle-btn {
+    display: none;       
+    background: none;    
+    border: none;        
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+
+}
+
+.mobile-toggle-btn.open {
+    background-color: #ffffff;
+    -webkit-mask-image: var(--icon-menu-close);
+    mask-image: var(--icon-menu-close);
+}
+
+/* --- Mobile Menu Overlay --- */
+.mobile-menu-drawer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #0d0d0d;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.mobile-menu-drawer.open {
+    max-height: 350px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.mobile-drawer-content {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.nav-item-mobile {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--font-navbar, sans-serif);
+}
+
+
+.nav-item-mobile .nav-text {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: normal;
+    transition: color 0.2s ease;
+}
+
+.nav-item-mobile .nav-num{
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.2s ease;
+}
+
+.hire-me-btn {
+    /* 1. Reset default button styles */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+    /* 2. Sizing & Spacing (Like padding inside a Flutter Container) */
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: var(--font-navbar, sans-serif);
+    
+    /* 3. Rounded Corners (Like BorderRadius.circular(12)) */
+    border-radius: 12px;
+    
+    /* 4. Background Gradient matching your design */
+    background: linear-gradient(to right, #ff5e00, #ff8c00);
+    
+    /* 5. Smooth animation handling */
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* --- Hover State Effects --- */
+.hire-me-btn:hover {
+    /* Make it slightly brighter when hovered (Like a subtle highlight overlay) */
+    background: linear-gradient(to right, #ff4e00, #ec008c);
+
+    
+}
+
+/* --- Active State (When Clicked) --- */
+.hire-me-btn:active {
+    /* Subtle push-down effect (Like clicking a physical button) */
+    transform: scale(0.96);
+}
+
+
+/* --- Responsiveness Media Rule Mapping --- */
+@media (max-width: 768px) {
+    #navbar {
+            height: 70px;
+    
+    }
+    .nav-desktop-menu {
+        display: none;
+    }
+
+    .mobile-toggle-btn {
+        display: block;
+        order: 1; /* Lowest value moves it to the first position on the left */
+    }
+
+    .logo {
+        order: 2;
+        font-size: 28px;
+    }
+
+    .hire-me-btn{
+        order: 3;
+            padding: 8px 20px;
+    font-size: 16px;
+    }
+}
