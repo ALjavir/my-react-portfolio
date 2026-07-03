@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router"; 
+import { Link } from "react-router";
 import { LuMenu, LuX } from "react-icons/lu";
 import "./navbar-style.css";
 
@@ -39,18 +39,18 @@ export default function Navbar() {
                 </div>
 
 
-                
-                    <button type="button" className="hire-me-btn">Hire Me
-                    </button>
-                    <button
-          type="button"
-          className="mobile-toggle-btn"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-        
-          {isMenuOpen ? <LuX size={32} color="#ffffff" /> : <LuMenu size={32} color="#ffffff" />}
-        </button>
-         
+
+                <button type="button" className="hire-me-btn">Hire Me
+                </button>
+                <button
+                    type="button"
+                    className="mobile-toggle-btn"
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                >
+
+                    {isMenuOpen ? <LuX size={32} color="#ffffff" /> : <LuMenu size={32} color="#ffffff" />}
+                </button>
+
 
 
                 <div className={`mobile-menu-drawer ${isMenuOpen ? "open" : ""}`}>

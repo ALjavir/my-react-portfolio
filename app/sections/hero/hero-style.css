@@ -1,0 +1,135 @@
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    gap: 40px;
+    min-height: calc(100vh - 80px); 
+}
+
+
+.hero-content {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 0 8px 0;
+}
+
+.hero-name {
+    font-size: 28px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 12px 0;
+}
+
+
+.hero-do.logo-gradient {
+    font-size: 56px;
+    font-weight: 700;
+    margin: 0 0 24px 0;
+    background: linear-gradient(to right, #ff5e00, #ff8c00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.hero-social-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+
+.hero-btn-group {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+
+.download-cv-btn {
+    background: transparent;
+    border: 1.6px  solid #ffffff80;;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.download-cv-btn:hover {
+    color: #ff4e00;
+    border: 1px solid transparent; 
+
+    background-image: linear-gradient(#000000, #000000), 
+                      linear-gradient(to right, #ff4e00, #ec008c);
+
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    border-radius: 12px; 
+}
+
+.download-cv-btn:active {
+    transform: scale(0.96);
+}
+
+
+
+.hero-image-wrapper {
+    flex: 1; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-profile-img {
+    width: 420px;
+    height: 420px;
+    object-fit: cover;
+  
+    
+    border-radius: 50%;
+    background-color: #161616;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* --- Responsive Smartphone Layout Switch (Row to Column) --- */
+@media (max-width: 900px) {
+    .hero-section {
+        flex-direction: column-reverse; 
+        
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+        padding-top: 20px;
+    }
+
+    .hero-content {
+        align-items: center;
+    }
+
+    .hero-do.logo-gradient {
+        font-size: 38px;
+    }
+
+    .hero-profile-img {
+        width: 280px;
+        height: 280px;
+    }
+}

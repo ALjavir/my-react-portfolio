@@ -16,7 +16,7 @@
     align-items: center;
     padding: 0 24px;         
     margin: 0;               
-    position: relative; /* Context helper anchor for the absolute mobile menu drawer */
+    position: relative; 
 }
 
 /* Logo Alignment */
@@ -153,39 +153,36 @@
 }
 
 .hire-me-btn {
-    /* 1. Reset default button styles */
+    
     border: none;
     outline: none;
     cursor: pointer;
-    
-    /* 2. Sizing & Spacing (Like padding inside a Flutter Container) */
-    padding: 10px 40px;
+    padding: 10px 25px;
     font-size: 20px;
     font-weight: 500;
     color: #ffffff;
     font-family: var(--font-navbar, sans-serif);
     
-    /* 3. Rounded Corners (Like BorderRadius.circular(12)) */
+   
     border-radius: 12px;
     
-    /* 4. Background Gradient matching your design */
+    
     background: linear-gradient(to right, #ff5e00, #ff8c00);
     
-    /* 5. Smooth animation handling */
+ 
     transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-/* --- Hover State Effects --- */
 .hire-me-btn:hover {
-    /* Make it slightly brighter when hovered (Like a subtle highlight overlay) */
+    
     background: linear-gradient(to right, #ff4e00, #ec008c);
 
     
 }
 
-/* --- Active State (When Clicked) --- */
+
 .hire-me-btn:active {
-    /* Subtle push-down effect (Like clicking a physical button) */
+
     transform: scale(0.96);
 }
 
@@ -202,7 +199,7 @@
 
     .mobile-toggle-btn {
         display: block;
-        order: 1; /* Lowest value moves it to the first position on the left */
+        order: 1; 
     }
 
     .logo {

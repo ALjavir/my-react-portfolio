@@ -1,0 +1,182 @@
+.main-footer {
+align-items: center;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(33 32 32);
+   padding: 30px 30px 10px 30px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logoFooter{
+        font-family: var(--font-logo, sans-serif);
+    font-size: 34px;
+    font-weight: bold;
+   background: linear-gradient(to right, #ff4e00, #ec008c);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-decoration: none;
+}
+.subText {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.2s ease;
+}
+
+.copyRight {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.2s ease;
+}
+
+
+
+
+.social-container {
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+   
+}
+
+
+.social-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%; 
+    
+    
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.02);
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+
+
+.social-btn svg {
+    color: rgba(255, 255, 255, 0.6); 
+    transition: color 0.3s ease, stroke 0.3s ease;
+}
+
+
+.social-btn:hover {
+
+    /* background-color: rgba(255, 255, 255, 0.1); */
+     background: linear-gradient(to right, #ff4e00, #ec008c);
+    border-color: rgba(255, 255, 255, 0.8);
+    
+    
+    transform: translateY(-4px); 
+}
+
+
+.social-btn:hover svg {
+    color: #ffffff;
+    stroke: #ffffff; 
+}
+
+.contact-container {
+    display: flex;
+     gap: 30px;
+    padding: 0px 20px 20px 20px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.6);
+   
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  
+    transition: color 0.2s ease;
+}
+
+.contract {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+   
+    transition: color 0.2s ease;
+}
+
+.footer-divider {
+ 
+    border: none;
+    
+ 
+    height: 1px;
+    
+   
+    background-color: rgba(255, 255, 255, 0.15);
+    
+   
+    width: 100%;
+    
+   
+    margin: 24px 0 10px 0;
+}
+
+
+@media (max-width: 768px) {
+
+
+
+        .logoFooter{
+     
+        font-size: 28px;
+    }
+    .home-container {
+        width: 100%;
+        overflow-x: hidden; 
+    }
+
+  
+    .footer-contact-row {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        gap: 12px;              
+    }
+    
+ 
+    .main-footer {
+        padding: 20px 14px;    
+        text-align: center;
+    }
+    .subText{
+        font-size: 18px;
+    }
+    .social-btn {
+        width: 48px;
+        height: 48px;
+    }
+    .contact-container {
+        flex-direction: column; 
+        align-items: center;
+       
+        gap: 8px;             
+        padding: 0px 10px 0px 10px; 
+      
+    }  .email{
+            font-size: 20px;
+        }
+
+        .contract{
+            font-size: 18px;
+        }
+}
