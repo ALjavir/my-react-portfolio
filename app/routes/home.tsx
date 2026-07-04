@@ -5,6 +5,7 @@ import type { Route } from "./+types/home";
 import NavBar from "~/navbar/navbar";
 import "./home-style.css";
 import Hero from "~/sections/hero/hero";
+import Skills from "~/sections/skills/skills";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -20,7 +21,7 @@ export default function Home() {
 
       <main className="section-content">
         <Hero />
-
+<Skills />
       </main>
       <Footer />
     </div>

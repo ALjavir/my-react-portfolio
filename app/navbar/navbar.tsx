@@ -11,9 +11,10 @@ export default function Navbar() {
 
     const navLinks = [
         { num: "01", text: "/ Home", path: "/" },
-        { num: "02", text: "/ About", path: "/about" },
-        { num: "03", text: "/ Projects", path: "/projects" },
-        { num: "04", text: "/ Contact", path: "/contact" },
+        { num: "02", text: "/ Skills", path: "/skills" },
+        { num: "03", text: "/ About", path: "/about" },
+        { num: "04", text: "/ Projects", path: "/projects" },
+        { num: "05", text: "/ Contact", path: "/contact" },
     ];
 
 
