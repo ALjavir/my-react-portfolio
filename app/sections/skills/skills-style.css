@@ -130,7 +130,7 @@
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 
   
-    border: 1px solid transparent;
+    border: 2px solid transparent;
 
  
     background-image: linear-gradient(#0b0b0c, #0b0b0c),
@@ -140,19 +140,16 @@
 }
 
 
-.glass-content-panel:hover .see-more-indicator {
-    color: #ff4e00;
-    transform: translateX(4px);
-}
+
 
 .glass-content-panel:hover .glass-tech-badge {
     background-color: rgba(255, 255, 255, 0.12);
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
 .skills-section{
-    gap: 0px;
+    gap: 10px;
 }
     .skills-header{
         padding: 30px 30px 30px 30px;

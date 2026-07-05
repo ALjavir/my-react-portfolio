@@ -110,7 +110,7 @@
 }
 
 /* --- Responsive Smartphone Layout Switch (Row to Column) --- */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .hero-section {
         flex-direction: column-reverse; 
         

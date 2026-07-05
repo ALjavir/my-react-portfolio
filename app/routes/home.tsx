@@ -6,6 +6,7 @@ import NavBar from "~/navbar/navbar";
 import "./home-style.css";
 import Hero from "~/sections/hero/hero";
 import Skills from "~/sections/skills/skills";
+import Projects from "~/sections/projects/project";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -21,7 +22,8 @@ export default function Home() {
 
       <main className="section-content">
         <Hero />
-<Skills />
+        <Skills />
+        <Projects/>
       </main>
       <Footer />
     </div>
