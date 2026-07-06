@@ -2,16 +2,17 @@ import { FiFacebook, FiGithub, FiLinkedin } from "react-icons/fi";
 import "./hero-style.css";
 export default function Hero() {
     return (
-        <section className="hero-section">
+        <section id="home" className="hero-section">
            
             <div className="hero-content">
                 <h6 className="hero-title">Hi I am</h6>
                 <h2 className="hero-name">Al Javir</h2>
+               
 
                
                 <h1 className="hero-do logo-gradient">Full-Stack Developer</h1>
 
-               
+                <h6 className = "discription"> A passionate and detail-oriented Computer Science graduate specializing in cross-platform mobile application development using the Flutter framework. Driven by a love for clean code and creative problem-solving, I focus on building intuitive, high-performance applications that deliver seamless user experiences.</h6>
                 <div className="hero-social-row">
                     <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-btn" aria-label="Instagram">
                         <FiFacebook size={18} />

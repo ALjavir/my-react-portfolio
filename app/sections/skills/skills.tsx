@@ -29,7 +29,7 @@ export default function Skills() {
     ];
 
     return (
-        <section className="skills-section">
+        <section id="skills" className="skills-section">
 
             <div className="skills-header">
                 <h1 className="heading">

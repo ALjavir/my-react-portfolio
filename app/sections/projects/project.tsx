@@ -13,7 +13,7 @@ export default function Projects() {
         : data.projects.filter(item => item.type === selectedCategory);
 
     return (
-        <section className="projects-section">
+        <section id="projects" className="projects-section">
             <div className="projects-header">
                 <h1 className="heading">MY CREATIVE WORK</h1>
                 <p className="subtext">

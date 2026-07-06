@@ -11,6 +11,8 @@ align-items: center;
     gap: 15px;
 }
 
+
+
 .logoFooter{
         font-family: var(--font-logo, sans-serif);
     font-size: 34px;
@@ -115,21 +117,14 @@ align-items: center;
 }
 
 .footer-divider {
- 
     border: none;
-    
- 
     height: 1px;
-    
-   
     background-color: rgba(255, 255, 255, 0.15);
-    
-   
     width: 100%;
-    
-   
     margin: 24px 0 10px 0;
 }
+
+
 
 
 @media (max-width: 768px) {
